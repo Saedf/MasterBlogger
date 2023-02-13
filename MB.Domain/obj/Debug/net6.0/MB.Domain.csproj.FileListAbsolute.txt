@@ -1,0 +1,12 @@
+D:\Programming\MasterBlogger\MB.Domain\bin\Debug\net6.0\MB.Domain.deps.json
+D:\Programming\MasterBlogger\MB.Domain\bin\Debug\net6.0\MB.Domain.dll
+D:\Programming\MasterBlogger\MB.Domain\bin\Debug\net6.0\MB.Domain.pdb
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.csproj.AssemblyReference.cache
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.AssemblyInfoInputs.cache
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.AssemblyInfo.cs
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.dll
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\refint\MB.Domain.dll
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.pdb
+D:\Programming\MasterBlogger\MB.Domain\obj\Debug\net6.0\ref\MB.Domain.dll

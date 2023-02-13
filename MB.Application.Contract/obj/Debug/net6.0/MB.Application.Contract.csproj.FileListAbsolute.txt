@@ -1,0 +1,12 @@
+D:\Programming\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.deps.json
+D:\Programming\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.dll
+D:\Programming\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.pdb
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.csproj.AssemblyReference.cache
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.AssemblyInfoInputs.cache
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.AssemblyInfo.cs
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.csproj.CoreCompileInputs.cache
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.dll
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\refint\MB.Application.Contract.dll
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.pdb
+D:\Programming\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\ref\MB.Application.Contract.dll
