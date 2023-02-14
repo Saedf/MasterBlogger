@@ -8,6 +8,7 @@ using MB.Application;
 using MB.Application.Contract.Article;
 using MB.Application.Contract.ArticleCategory;
 using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Service;
 using MB.Infrastructure;
@@ -29,6 +30,7 @@ namespace MB.Infrastrucutre.Core
 
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleApplication, ArticleApplication>();
+            services.AddTransient<IArticleValidatorServices, ArticleValidatorService>();
 
         }
     }

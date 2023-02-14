@@ -10,6 +10,6 @@ namespace MB.Domain.ArticleAgg
         Article Get(long id);
 
         void Save();
-        // void Update(Article article);
+        bool Exists(string title);
     }
 }

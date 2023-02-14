@@ -48,8 +48,8 @@
                             <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@article.Id">Edit</a>
 
                         </td>
-                      @*  <td>
-                            @if (article.IsDeleted)
+                        <td>
+                            @if (article.IsDelete)
                             {
                                 <form method="post" asp-page-handler="Activate" class="float-left">
                                     <button class="btn btn-success">Activate</button>
@@ -63,7 +63,7 @@
                                     <input type="hidden" name="id" value="@article.Id" />
                                 </form>
                             }
-                        </td>*@
+                        </td>
                     </tr>
                 }
             </tbody>

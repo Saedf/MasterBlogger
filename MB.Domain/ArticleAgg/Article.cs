@@ -1,4 +1,5 @@
-﻿using MB.Domain.ArticleCategoryAgg;
+﻿using MB.Domain.ArticleAgg.Services;
+using MB.Domain.ArticleCategoryAgg;
 
 namespace MB.Domain.ArticleAgg
 {
@@ -21,8 +22,11 @@ namespace MB.Domain.ArticleAgg
             
         }
 
-        public Article(string title, string shortDescription, string picture, string pictureAlt, string pictureTitle, string content, long articleCategoryId)
+        public Article(string title, string shortDescription, string picture, string pictureAlt, string pictureTitle, string content, long articleCategoryId,
+            IArticleValidatorServices articleValidatorServices)
         {
+            Validate(title, articleCategoryId);
+            articleValidatorServices.CheckedThatThisRecordAlreadyExists(title);
             Title = title;
             ShortDescription = shortDescription;
             Picture = picture;
@@ -33,8 +37,23 @@ namespace MB.Domain.ArticleAgg
             CreationDate=DateTime.Now;
             IsDeleted = false;
         }
+
+        private static void Validate(string title, long articleCategoryId)
+        {
+            if (string.IsNullOrEmpty(title))
+            {
+                throw new ArgumentNullException();
+            }
+
+            if (articleCategoryId == 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+        }
+
         public void Edit(string title, string shortDescription, string picture, string pictureAlt, string pictureTitle, string content, long articleCategoryId)
         {
+            Validate(title,articleCategoryId);
             Title = title;
             ShortDescription = shortDescription;
             Picture = picture;
@@ -44,6 +63,16 @@ namespace MB.Domain.ArticleAgg
             ArticleCategoryId = articleCategoryId;
 
 
+        }
+
+        public void Delete(long id)
+        {
+            IsDeleted = true;
+        }
+
+       public void Activate(long id)
+        {
+            IsDeleted=false;
         }
     }
 }

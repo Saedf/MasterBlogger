@@ -17,5 +17,17 @@ namespace MB.Presentation.Areas.Administrator.Pages.ArticleManagement
         {
             Articles = _articleApplication.GetList();
         }
+
+        public RedirectToPageResult OnPostDelete(long id)
+        {
+            _articleApplication.Delete(id);
+            return RedirectToPage("./List");
+        }
+
+        public RedirectToPageResult OnPostActivate(long id)
+        {
+            _articleApplication.Activate(id);
+            return RedirectToPage("./List");
+        }
     }
 }
