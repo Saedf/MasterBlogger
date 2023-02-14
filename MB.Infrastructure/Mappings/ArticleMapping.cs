@@ -14,7 +14,7 @@ namespace MB.Infrastructure.Mappings
             builder.Property(x => x.Content).HasColumnName("Body");
             builder.Property(x => x.Picture).HasMaxLength(300);
             builder.Property(x => x.PictureAlt).HasMaxLength(300);
-            builder.Property(x => x.PicturTitle).HasMaxLength(300);
+            builder.Property(x => x.PictureTitle).HasMaxLength(300);
             builder.Property(x => x.CreationDate);
             builder.Property(x => x.IsDeleted);
             builder.HasOne(x => x.ArticleCategory)

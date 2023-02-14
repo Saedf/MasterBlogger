@@ -29,5 +29,11 @@ namespace MB.Infrastructure.Repositories
                 })
                 .ToList();
         }
+
+        public void Create(Article article)
+        {
+            _context.Articles.Add(article);
+            _context.SaveChanges();
+        }
     }
 }

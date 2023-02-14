@@ -28,8 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlQ2F0ZWdvcnlNYW5hZ2VtZW50XExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Programming/MasterBlogger/MB.Presentation/Areas/Administrator/Pages/ArticleManagement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlTWFuYWdlbWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Programming/MasterBlogger/MB.Presentation/Areas/Administrator/Pages/ArticleManagement/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlTWFuYWdlbWVudFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/MasterBlogger/MB.Presentation/Areas/Administrator/Pages/ArticleManagement/NewArticle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlTWFuYWdlbWVudFxOZXdBcnRpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Programming/MasterBlogger/MB.Presentation/Areas/Administrator/Pages/Error.cshtml]
