@@ -1156,9 +1156,22 @@
           }
         }
       },
+      "MB.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MB.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Application.Contract.dll": {}
+        }
+      },
       "MB.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MB.Application.Contract": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MB.Domain.dll": {}
         },
@@ -3501,6 +3514,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MB.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../MB.Application.Contract/MB.Application.Contract.csproj",
+      "msbuildProject": "../MB.Application.Contract/MB.Application.Contract.csproj"
     },
     "MB.Domain/1.0.0": {
       "type": "project",

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryAgg.Service;
 
 namespace MB.Domain.ArticleCategoryAgg
@@ -13,6 +14,12 @@ namespace MB.Domain.ArticleCategoryAgg
         public string Title { get; private set; }
         public bool IsDeleted { get; private set; }
         public DateTime CreationDate { get; private set; }
+        public ICollection<Article> Articles { get; private set; }
+
+        protected ArticleCategory()
+        {
+            
+        }
 
         public ArticleCategory(string title, IArticleCategoryValidationService articleCategoryValidationService)
         {
@@ -21,6 +28,7 @@ namespace MB.Domain.ArticleCategoryAgg
             Title = title;
             IsDeleted = false;
             CreationDate=DateTime.Now;
+            Articles = new List<Article>();
         }
 
         private static void GuardAgainstEmptyTitle(string title)

@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Presentation", "MB.Presentation\MB.Presentation.csproj", "{7CF5117B-6BD1-4610-980F-85E151B9919F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MB.Infrastrucutre.Core", "MB.Infrastrucutre.Core\MB.Infrastrucutre.Core.csproj", "{DF5866F1-54B4-4310-86A5-3F1149944368}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Infrastrucutre.Core", "MB.Infrastrucutre.Core\MB.Infrastrucutre.Core.csproj", "{DF5866F1-54B4-4310-86A5-3F1149944368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -15,3 +15,5 @@ D:\Programming\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\refint\MB.Infras
 D:\Programming\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.pdb
 D:\Programming\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\MB.Infrastructure.genruntimeconfig.cache
 D:\Programming\MasterBlogger\MB.Infrastructure\obj\Debug\net6.0\ref\MB.Infrastructure.dll
+D:\Programming\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Application.Contract.dll
+D:\Programming\MasterBlogger\MB.Infrastructure\bin\Debug\net6.0\MB.Application.Contract.pdb

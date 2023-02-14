@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using MB.Domain.ArticleCategoryAgg;
 
-namespace MB.Infrastructure
+namespace MB.Infrastructure.Repositories
 {
-    public class ArticleCategoryRepository:IArticleCategoryRepository
+    public class ArticleCategoryRepository : IArticleCategoryRepository
     {
         private readonly MasterBloggerContext _context;
 
@@ -25,7 +25,7 @@ namespace MB.Infrastructure
 
         public List<ArticleCategory> GetAll()
         {
-            return _context.ArticleCategories.OrderByDescending(x=>x.Id).ToList();
+            return _context.ArticleCategories.OrderByDescending(x => x.Id).ToList();
         }
 
         public ArticleCategory Get(long id)
@@ -40,7 +40,7 @@ namespace MB.Infrastructure
 
         public bool Exists(string title)
         {
-           return _context.ArticleCategories.Any(x => x.Title == title);
+            return _context.ArticleCategories.Any(x => x.Title == title);
         }
     }
 }

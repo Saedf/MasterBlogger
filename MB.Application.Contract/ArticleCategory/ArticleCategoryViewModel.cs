@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MB.Application.Contract
+namespace MB.Application.Contract.ArticleCategory
 {
     public class ArticleCategoryViewModel
     {

@@ -153,7 +153,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Programming\\MasterBlogger\\MB.Application.Contract\\MB.Application.Contract.csproj": {
+                "projectPath": "D:\\Programming\\MasterBlogger\\MB.Application.Contract\\MB.Application.Contract.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
