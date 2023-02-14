@@ -1,4 +1,71 @@
-﻿@page
+﻿@page "{id:long}"
 @model MB.Presentation.Areas.Administrator.Pages.ArticleManagement.EditModel
 @{
 }
+<div class="card">
+    <div class="card-header">
+        <h2>Edit Article : @Model.EditArticle.Title</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="EditArticle.Id"/>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.Title" class="control-label">Title:</label>
+                            <input asp-for="EditArticle.Title" class="form-control" value="@Model.EditArticle.Title" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.Content" class="control-label">Content:</label>
+                            <textarea asp-for="EditArticle.Content" class="form-control" rows="5">@Model.EditArticle.Content</textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.ShortDescription" class="control-label">ShortDescription:</label>
+                            <input asp-for="EditArticle.ShortDescription" class="form-control" value="@Model.EditArticle.ShortDescription" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.Picture" class="control-label">Picture:</label>
+                            <input asp-for="EditArticle.Picture" class="form-control" value="@Model.EditArticle.Picture" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.PictureAlt" class="control-label">PictureAlt:</label>
+                            <input asp-for="EditArticle.PictureAlt" class="form-control" value="@Model.EditArticle.PictureAlt" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.PictureTitle" class="control-label">PictureTitle:</label>
+                            <input asp-for="EditArticle.PictureTitle" class="form-control" value="@Model.EditArticle.PictureTitle" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label asp-for="EditArticle.ArticleCategoryId" class="control-label">Article Category:</label>
+                            <select asp-for="EditArticle.ArticleCategoryId" asp-items="Model.ArticleCategories" class="form-control">
+                                <option value="0">Select Article Category...</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Edit" class="btn btn-success" />
+                        <a class="btn btn-dark" asp-page="./List" asp-area="Administrator">Back to list</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

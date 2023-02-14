@@ -6,10 +6,10 @@ namespace MB.Domain.ArticleAgg
     {
         public long Id { get; private set; }
         public string Title { get; private set; }
-        public string ShorDecription { get; private set; }
+        public string ShortDescription { get; private set; }
         public string Picture { get; private set; }
         public string PictureAlt { get; private set; }
-        public string PicturTitle { get; private set; }
+        public string PictureTitle { get; private set; }
         public string Content { get; private set; }
         public bool IsDeleted { get; private set; }
         public DateTime CreationDate { get; private set; }
@@ -21,17 +21,29 @@ namespace MB.Domain.ArticleAgg
             
         }
 
-        public Article(string title, string shorDecription, string picture, string pictureAlt, string picturTitle, string content, long articleCategoryId)
+        public Article(string title, string shortDescription, string picture, string pictureAlt, string pictureTitle, string content, long articleCategoryId)
         {
             Title = title;
-            ShorDecription = shorDecription;
+            ShortDescription = shortDescription;
             Picture = picture;
             PictureAlt = pictureAlt;
-            PicturTitle = picturTitle;
+            PictureTitle = pictureTitle;
             Content = content;
             ArticleCategoryId = articleCategoryId;
             CreationDate=DateTime.Now;
             IsDeleted = false;
+        }
+        public void Edit(string title, string shortDescription, string picture, string pictureAlt, string pictureTitle, string content, long articleCategoryId)
+        {
+            Title = title;
+            ShortDescription = shortDescription;
+            Picture = picture;
+            PictureAlt = pictureAlt;
+            PictureTitle = pictureTitle;
+            Content = content;
+            ArticleCategoryId = articleCategoryId;
+
+
         }
     }
 }
