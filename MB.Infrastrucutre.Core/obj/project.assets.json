@@ -1098,6 +1098,19 @@
         "runtime": {
           "bin/placeholder/MB.Infrastructure.dll": {}
         }
+      },
+      "MB.Infrastrucutre.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MB.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MB.Infrastrucutre.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Infrastrucutre.Query.dll": {}
+        }
       }
     }
   },
@@ -3278,6 +3291,11 @@
       "type": "project",
       "path": "../MB.Infrastructure/MB.Infrastructure.csproj",
       "msbuildProject": "../MB.Infrastructure/MB.Infrastructure.csproj"
+    },
+    "MB.Infrastrucutre.Query/1.0.0": {
+      "type": "project",
+      "path": "../MB.Infrastrucutre.Query/MB.Infrastrucutre.Query.csproj",
+      "msbuildProject": "../MB.Infrastrucutre.Query/MB.Infrastrucutre.Query.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3285,6 +3303,7 @@
       "MB.Application >= 1.0.0",
       "MB.Application.Contract >= 1.0.0",
       "MB.Infrastructure >= 1.0.0",
+      "MB.Infrastrucutre.Query >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0"
     ]
   },
@@ -3327,6 +3346,9 @@
             },
             "D:\\Programming\\MasterBlogger\\MB.Infrastructure\\MB.Infrastructure.csproj": {
               "projectPath": "D:\\Programming\\MasterBlogger\\MB.Infrastructure\\MB.Infrastructure.csproj"
+            },
+            "D:\\Programming\\MasterBlogger\\MB.Infrastrucutre.Query\\MB.Infrastrucutre.Query.csproj": {
+              "projectPath": "D:\\Programming\\MasterBlogger\\MB.Infrastrucutre.Query\\MB.Infrastrucutre.Query.csproj"
             }
           }
         }

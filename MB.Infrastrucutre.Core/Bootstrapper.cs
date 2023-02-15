@@ -13,6 +13,7 @@ using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Service;
 using MB.Infrastructure;
 using MB.Infrastructure.Repositories;
+using MB.Infrastrucutre.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -31,6 +32,8 @@ namespace MB.Infrastrucutre.Core
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleApplication, ArticleApplication>();
             services.AddTransient<IArticleValidatorServices, ArticleValidatorService>();
+
+            services.AddTransient<IArticleQuery,ArticleQuery>();
 
         }
     }

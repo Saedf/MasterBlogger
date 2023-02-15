@@ -739,10 +739,19 @@
           "MB.Application": "1.0.0",
           "MB.Application.Contract": "1.0.0",
           "MB.Infrastructure": "1.0.0",
+          "MB.Infrastrucutre.Query": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
           "MB.Infrastrucutre.Core.dll": {}
+        }
+      },
+      "MB.Infrastrucutre.Query/1.0.0": {
+        "dependencies": {
+          "MB.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "MB.Infrastrucutre.Query.dll": {}
         }
       }
     }
@@ -1250,6 +1259,11 @@
       "sha512": ""
     },
     "MB.Infrastrucutre.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MB.Infrastrucutre.Query/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
