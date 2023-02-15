@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using MB.Domain.CommentAgg;
 using MB.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,9 @@ public class ArticleQuery : IArticleQuery
 
     public List<ArticleQueryView> GetArticles()
     {
-        return _context.Articles.Include(x => x.ArticleCategory)
+        return _context.Articles
+            .Include(x => x.ArticleCategory)
+            .Include(x=>x.Comments)
             .Select(x => new ArticleQueryView
             {
                 Id = x.Id,
@@ -25,14 +28,29 @@ public class ArticleQuery : IArticleQuery
                 PictureTitle = x.PictureTitle,
                 ShortDescription = x.ShortDescription,
                 ArticleCategory = x.ArticleCategory.Title,
-                CreationDate = x.CreationDate.ToString(CultureInfo.CurrentCulture)
+                CreationDate = x.CreationDate.ToString(CultureInfo.CurrentCulture),
+                CommentCount = x.Comments.Count(x=>x.Status==Statuses.Confirmed),
+                //Comments = MapComments(x.Comments)
             }).OrderByDescending(x => x.Id).ToList();
     }
 
-    public ArticleQueryView GetArticle(long id)
+    private static List<CommentQueryView> MapComments(IEnumerable<Comment> comments)
     {
-        return _context.Articles.Include(x => x.ArticleCategory)
-           
+        return comments.Where(x => x.Status == Statuses.Confirmed)
+            .Select(x=>new CommentQueryView
+        {
+            Name = x.Name,
+            Message = x.Message,
+            CreationDate = x.CreationDate.ToString(CultureInfo.CurrentCulture),
+            
+        }).ToList();
+    }
+
+    public ArticleQueryView? GetArticle(long id)
+    {
+        return _context.Articles
+            .Include(x => x.ArticleCategory)
+            .Include(x=>x.Comments)         
             .Select(x => new ArticleQueryView
             {
                 Id = x.Id,
@@ -40,7 +58,10 @@ public class ArticleQuery : IArticleQuery
                 Picture = x.Picture,
                 Content = x.Content,
                 ArticleCategory = x.ArticleCategory.Title,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture)
+                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CommentCount = x.Comments.Count(x=>x.Status==Statuses.Confirmed),
+                Comments=MapComments(x.Comments.Where(z=>z.Status==Statuses.Confirmed))
+
             }).FirstOrDefault(x=>x.Id==id);
     }
 }

@@ -7,7 +7,7 @@ namespace MB.Presentation.Pages
 {
     public class ArticleDetailsModel : PageModel
     {
-        public ArticleQueryView ArticleQueryView { get; set; }
+        public ArticleQueryView? ArticleQueryView { get; set; }
         private readonly IArticleQuery _articleQuery;
         private readonly ICommentApplication _commentApplication;
 
