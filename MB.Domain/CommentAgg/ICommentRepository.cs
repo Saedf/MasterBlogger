@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MB.Application.Contract.Comment;
 
 namespace MB.Domain.CommentAgg
 {
@@ -10,6 +11,7 @@ namespace MB.Domain.CommentAgg
     {
         void Create(Comment comment);
         void Save();
-
+        List<CommentViewModel> GetList();
+        Comment Get(long Id);
     }
 }
