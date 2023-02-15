@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MB.Domain.CommentAgg
 {
-    public class ICommentRepository
+    public interface ICommentRepository
     {
+        void Create(Comment comment);
+        void Save();
+
     }
 }

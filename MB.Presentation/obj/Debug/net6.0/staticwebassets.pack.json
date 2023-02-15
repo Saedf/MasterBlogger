@@ -433,22 +433,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.css",
-      "PackagePath": "staticwebassets\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.css"
-    },
-    {
-      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.js",
-      "PackagePath": "staticwebassets\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.js"
-    },
-    {
-      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.min.css",
-      "PackagePath": "staticwebassets\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.min.css"
-    },
-    {
-      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.min.js",
-      "PackagePath": "staticwebassets\\vendor\\@fancyapps\\fancybox\\jquery.fancybox.min.js"
-    },
-    {
       "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
     },
@@ -487,6 +471,22 @@
     {
       "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\fancyapps\\fancybox\\jquery.fancybox.css",
+      "PackagePath": "staticwebassets\\vendor\\fancyapps\\fancybox\\jquery.fancybox.css"
+    },
+    {
+      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\fancyapps\\fancybox\\jquery.fancybox.js",
+      "PackagePath": "staticwebassets\\vendor\\fancyapps\\fancybox\\jquery.fancybox.js"
+    },
+    {
+      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\fancyapps\\fancybox\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\vendor\\fancyapps\\fancybox\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\fancyapps\\fancybox\\jquery.fancybox.min.js",
+      "PackagePath": "staticwebassets\\vendor\\fancyapps\\fancybox\\jquery.fancybox.min.js"
     },
     {
       "Id": "D:\\Programming\\MasterBlogger\\MB.Presentation\\wwwroot\\vendor\\font-awesome\\HELP-US-OUT.txt",
