@@ -100,6 +100,45 @@ namespace MB.Infrastructure.Migrations
                     b.ToTable("ArticleCategories", (string)null);
                 });
 
+            modelBuilder.Entity("MB.Domain.CommentAgg.Comment", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("ArticleId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
+
+                    b.ToTable("Comments", (string)null);
+                });
+
             modelBuilder.Entity("MB.Domain.ArticleAgg.Article", b =>
                 {
                     b.HasOne("MB.Domain.ArticleCategoryAgg.ArticleCategory", "ArticleCategory")
@@ -109,6 +148,22 @@ namespace MB.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("ArticleCategory");
+                });
+
+            modelBuilder.Entity("MB.Domain.CommentAgg.Comment", b =>
+                {
+                    b.HasOne("MB.Domain.ArticleAgg.Article", "Article")
+                        .WithMany("Comments")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+                });
+
+            modelBuilder.Entity("MB.Domain.ArticleAgg.Article", b =>
+                {
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("MB.Domain.ArticleCategoryAgg.ArticleCategory", b =>
