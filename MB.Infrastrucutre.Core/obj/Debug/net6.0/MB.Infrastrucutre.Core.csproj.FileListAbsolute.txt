@@ -21,3 +21,5 @@ D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\bin\Debug\net6.0\MB.Domain.p
 D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\obj\Debug\net6.0\MB.Infrastrucutre.Core.csproj.CopyComplete
 D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\bin\Debug\net6.0\MB.Infrastrucutre.Query.dll
 D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\bin\Debug\net6.0\MB.Infrastrucutre.Query.pdb
+D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\bin\Debug\net6.0\01_FrameWork.dll
+D:\Programming\MasterBlogger\MB.Infrastrucutre.Core\bin\Debug\net6.0\01_FrameWork.pdb

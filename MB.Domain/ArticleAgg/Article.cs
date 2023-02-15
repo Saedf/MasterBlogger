@@ -1,12 +1,13 @@
-﻿using MB.Domain.ArticleAgg.Services;
+﻿using _01_FrameWork.Domain;
+using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.CommentAgg;
 
 namespace MB.Domain.ArticleAgg
 {
-    public class Article
+    public class Article:DomainBase<long>
     {
-        public long Id { get; private set; }
+        // public long Id { get; private set; }
         public string Title { get; private set; }
         public string ShortDescription { get; private set; }
         public string Picture { get; private set; }
@@ -14,7 +15,7 @@ namespace MB.Domain.ArticleAgg
         public string PictureTitle { get; private set; }
         public string Content { get; private set; }
         public bool IsDeleted { get; private set; }
-        public DateTime CreationDate { get; private set; }
+        // public DateTime CreationDate { get; private set; }
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
 
@@ -37,7 +38,7 @@ namespace MB.Domain.ArticleAgg
             PictureTitle = pictureTitle;
             Content = content;
             ArticleCategoryId = articleCategoryId;
-            CreationDate=DateTime.Now;
+            // CreationDate=DateTime.Now;
             IsDeleted = false;
             Comments=new List<Comment>();
         }

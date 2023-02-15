@@ -8,10 +8,16 @@
     ".NETCoreApp,Version=v6.0": {
       "MB.Domain/1.0.0": {
         "dependencies": {
+          "01_FrameWork": "1.0.0",
           "MB.Application.Contract": "1.0.0"
         },
         "runtime": {
           "MB.Domain.dll": {}
+        }
+      },
+      "01_FrameWork/1.0.0": {
+        "runtime": {
+          "01_FrameWork.dll": {}
         }
       },
       "MB.Application.Contract/1.0.0": {
@@ -23,6 +29,11 @@
   },
   "libraries": {
     "MB.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "01_FrameWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

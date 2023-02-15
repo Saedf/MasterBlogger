@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "01_FrameWork/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/01_FrameWork.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_FrameWork.dll": {}
+        }
+      },
       "MB.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "01_FrameWork/1.0.0": {
+      "type": "project",
+      "path": "../01_FrameWork/01_FrameWork.csproj",
+      "msbuildProject": "../01_FrameWork/01_FrameWork.csproj"
+    },
     "MB.Application.Contract/1.0.0": {
       "type": "project",
       "path": "../MB.Application.Contract/MB.Application.Contract.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "01_FrameWork >= 1.0.0",
       "MB.Application.Contract >= 1.0.0"
     ]
   },
@@ -57,6 +73,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Programming\\MasterBlogger\\01_FrameWork\\01_FrameWork.csproj": {
+              "projectPath": "D:\\Programming\\MasterBlogger\\01_FrameWork\\01_FrameWork.csproj"
+            },
             "D:\\Programming\\MasterBlogger\\MB.Application.Contract\\MB.Application.Contract.csproj": {
               "projectPath": "D:\\Programming\\MasterBlogger\\MB.Application.Contract\\MB.Application.Contract.csproj"
             }

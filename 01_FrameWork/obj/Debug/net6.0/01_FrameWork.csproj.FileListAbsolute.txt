@@ -1,0 +1,12 @@
+D:\Programming\MasterBlogger\01_FrameWork\bin\Debug\net6.0\01_FrameWork.deps.json
+D:\Programming\MasterBlogger\01_FrameWork\bin\Debug\net6.0\01_FrameWork.dll
+D:\Programming\MasterBlogger\01_FrameWork\bin\Debug\net6.0\01_FrameWork.pdb
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.csproj.AssemblyReference.cache
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.AssemblyInfoInputs.cache
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.AssemblyInfo.cs
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.csproj.CoreCompileInputs.cache
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.dll
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\refint\01_FrameWork.dll
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\01_FrameWork.pdb
+D:\Programming\MasterBlogger\01_FrameWork\obj\Debug\net6.0\ref\01_FrameWork.dll
