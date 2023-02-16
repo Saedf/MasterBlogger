@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
+using _01_FrameWork.Infrastructure;
 using MB.Application;
 using MB.Application.Contract.Article;
 using MB.Application.Contract.ArticleCategory;
@@ -39,6 +40,8 @@ namespace MB.Infrastrucutre.Core
 
             services.AddTransient<ICommentApplication, CommentApplication>();
             services.AddTransient<ICommentRepository, CommentRepository>();
+
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
 
         }
     }

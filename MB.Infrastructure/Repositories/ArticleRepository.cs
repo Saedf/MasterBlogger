@@ -27,7 +27,7 @@ namespace MB.Infrastructure.Repositories
                     CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
                     IsDelete = x.IsDeleted
 
-                })
+                }).OrderByDescending(x=>x.Id)
                 .ToList();
         }
 

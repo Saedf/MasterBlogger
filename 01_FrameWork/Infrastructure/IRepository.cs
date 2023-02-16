@@ -14,7 +14,7 @@ namespace _01_FrameWork.Infrastructure
         T Get(Tkey id);
         List<T> GetAll();
         bool Exists(Expression<Func<T,bool>> expression);
-        void Save();
+        // void Save();
 
     }
 }

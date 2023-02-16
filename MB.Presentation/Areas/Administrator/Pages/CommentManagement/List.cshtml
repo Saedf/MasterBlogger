@@ -19,8 +19,8 @@
                     <th>Article</th>
                     <th>Status</th>
                     <th>CreationDate</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    @* <th>Edit</th> *@
+                   @* <th>Delete</th>*@
                 </tr>
             </thead>
             <tbody>
@@ -55,7 +55,7 @@
                         </td>
                         <td>@comment.CreationDate</td>
                         <td>
-                            <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@comment.Id">Edit</a>
+                            @*<a class="btn btn-warning" asp-page="./Edit" asp-route-id="@comment.Id">Edit</a>*@
 
                         </td>
                         <td>

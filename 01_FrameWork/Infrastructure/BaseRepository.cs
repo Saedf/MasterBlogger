@@ -39,9 +39,9 @@ namespace _01_FrameWork.Infrastructure
             return _dbContext.Set<T>().Any(expression);
         }
 
-        public void Save()
-        {
-            _dbContext.SaveChanges();
-        }
+        // public void Save()
+        // {
+        //     _dbContext.SaveChanges();
+        // }
     }
 }
