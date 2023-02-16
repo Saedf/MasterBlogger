@@ -44,7 +44,8 @@ namespace MB.Application
         public void Create(CreateArticleCategoryCommand command)
         {
             var articleCategory=new ArticleCategory(command.Title,_articleCategoryValidationService);
-            _articleCategoryRepository.Add(articleCategory);
+            _articleCategoryRepository.Create(articleCategory);
+            _articleCategoryRepository.Save();
         }
 
         public void Rename(RenameArticleCategoryCommand command)

@@ -26,6 +26,7 @@ namespace MB.Application
             var article = new Article(command.Title, command.ShortDescription, command.Picture, command.PictureAlt,
                 command.PictureTitle, command.Content, command.ArticleCategoryId,_articleValidatorServices);
             _articleRepository.Create(article);
+            _articleRepository.Save();
             
 
         }
